@@ -1,0 +1,127 @@
+.employee{
+    display: inline-flex;
+    flex-direction: row;
+    border: 1px solid gray;
+}
+
+h3, p{
+    margin: 5px 0;
+}
+
+.image{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.details{
+    margin: 10px;
+}
+
+.grid{
+    display:grid; 
+    grid-template-columns: repeat(auto-fill,  minmax(200px, 400px));
+    grid-gap: 20px 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.email, 
+.city{
+    font-size: 15px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info{
+    margin-bottom: 10px;
+}
+
+.grid>div{
+    border-radius: 7px;
+}
+
+.grid>div:hover{
+    opacity: 0.7;
+}
+
+.title,
+.error{
+    margin: 20px;
+}
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.overlay{
+    background-color:rgba(56, 56, 56, 0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height:100vh;
+    z-index:1;
+}
+
+.error{
+    color: red;
+}
+
+.card{
+    background-color:white;
+    position: fixed;
+    top:100px;
+    left:38vw;
+    z-index:2;
+    padding: 10px;
+}
+
+#close{
+    display: block;
+    margin-left:auto;
+}
+
+button{
+    background-color:white;
+    border: none;
+    padding: 5px;
+}
+
+.Xp:hover{
+    color:gray;
+}
+
+.Xp{
+    font-size: 20px;
+}
+
+.card{
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width:480px){
+    .card{
+        left:0;
+        right:0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .employee{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .image{
+        width: 40%;
+        height: auto;
+        margin: auto;
+    }
+}
